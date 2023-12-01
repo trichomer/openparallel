@@ -18,7 +18,7 @@ function App() {
       try {
         const url = `https://api.opensea.io/api/v2/chain/${chain}/account/${walletAddress}/nfts?collection=${collection}&limit=${limit}`;
         const response = await axios.get(url, { headers });
-
+// a
         const nfts = response.data.nfts || [];
         
         setNftList(nfts);
